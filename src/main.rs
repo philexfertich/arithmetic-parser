@@ -32,7 +32,7 @@ fn main() {
                 Operator::Sci => v2 * 10_f64.powf(v1),
                 Operator::Exp => v2.powf(v1),
                 Operator::Neg => -v1,
-                Operator::Pos => v1,
+                Operator::Pos => +v1,
             };
             stack.push(result);
         } else if let Data::Val(v) = data {
